@@ -1,0 +1,317 @@
+/*FONTS
+
+Parrafos, frases, titulos de areas - Overlock
+Titulos y Menu - Nunito sans
+
+
+font-family: 'Overlock', sans-serif;
+font-family: 'Nunito Sans', sans-serif; 
+
+
+color de texto: #393939;
+color de header: rgba(0,0,0,0.7);
+lineas de parrafo 1: #A1A1A1;;
+linea superior de titulo: #D6D6D6;
+color de fondo de footer: #242424;
+color de cambio hover en el menu: #FCC458;
+*/
+body{ 
+    margin: 0px;
+}
+
+.contenedor{
+    margin: 0 auto;
+
+}
+
+header{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 3;
+}
+
+header nav ul a:hover {
+    color: #FCC458;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav{
+    float: right;
+    width: 60%;
+    margin-top: 20px; 
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito Sans', sans-serif;
+    flex-direction: row;   
+}
+
+header nav ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header div{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header div.menu-movil{
+    width:30px;
+    display: none;
+    float: right;
+    text-align: right;
+      
+}
+
+div.menu-movil:hover{
+    cursor: pointer;
+}
+
+div.menu-movil span{
+    height: 4px;
+    margin-bottom: 6px;
+    background-color: white;
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    header nav{
+        float: none;
+        margin: 0 auto;
+    }
+
+    header div{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 3%;
+    }
+
+    header img{
+        width: 100px
+    }
+
+}
+
+@media only screen and (max-width: 414px){
+    header nav{
+        display: none;
+    }
+
+    header img{
+        width: 80px;
+        float:left;
+    }
+
+    header div.menu-movil{
+        display: block;
+      
+    }
+
+    div.menu-movil span{
+        display: block;
+    }
+
+}
+
+#banner{
+    background-image: url(../imagenes/banner.jpeg);
+    height: 450px;
+    position: relative;
+    background-size: cover;
+}
+
+#banner p{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    font-family: 'Overlock', sans-serif;
+    color: white;
+    text-align: right;   
+}
+
+@media only screen and (max-width: 414px){
+    #banner p{
+        right: 4%;
+        text-align: center; 
+        font-size: 20px;
+    }
+}
+
+p{
+    color:#393939;
+    font-size: 25px;  
+}
+
+section{margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    }
+
+.parrafolineas{
+    font-family: 'Overlock', sans-serif;
+    padding: 10px 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-right: 2px solid #A1A1A1;
+    border-left: 2px solid #A1A1A1; 
+}
+
+@media only screen and (max-width: 414px){
+    .parrafolineas{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+article{
+    display:flex;
+    justify-content: space-between;
+    height: 300px;
+    position: relative;
+
+}
+
+#landscapes{
+    width: 30%;
+    background-image: url(../imagenes/lanscapes.jpeg);
+    background-size: cover;
+    
+}
+
+#portraits{
+   width: 30%;
+    background-image: url(../imagenes/portraits.jpeg);
+    background-size: cover;
+    
+}
+#wildlife{
+   width: 30%;
+    background-image: url(../imagenes/wildlife.jpeg);
+    background-size: cover;
+}
+
+h2{
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    font-size: 1.5em; 
+    width: 30%;
+    bottom: 4%;
+    color: white;
+    text-decoration-line: overline;
+    
+}
+
+
+
+h1{
+    text-decoration-line: overline;font-family: 'Nunito Sans', sans-serif;
+}
+
+section p{
+    font-family: 'Overlock', sans-serif;
+}
+
+@media only screen and (max-width: 414px){
+    section p{
+        font-size: 15px;
+    }
+}
+
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 40px
+}
+
+#galeria img{width: 350px;
+    height: 250px;
+}
+
+@media only screen and (max-width: 768px){
+    #galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    #galeria img{
+        width: 200px;
+        height: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 414px){
+    #galeria{
+        grid-gap: 0px;
+        grid-template-columns: auto auto ;
+    }
+
+    #galeria img{
+        width: 145px;
+        height: 100px;
+    }
+
+}
+
+footer{ 
+    background-color: #242424;
+    text-align: center;
+    padding: 20px
+
+}
+
+footer p{
+    float: left;   
+    color: white;
+    margin-left: 10%;
+    margin-right: 15%;
+    font-size: 20px;
+    
+}
+
+footer div{
+    margin-left: 70%;
+
+}
+
+footer div img{
+    padding: 5px;
+
+}
+
+@media only screen and (max-width: 768px){
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p{
+        float: none; 
+        margin: 0 auto; 
+        order: 2; 
+        width: 100%;
+        padding-top: 10px;
+        border-top: 1px solid #393939;
+    }
+
+    footer div{
+        order: 1;
+        margin: 0 auto;
+    }
+
+}
